@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    padding: 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 20px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    z-index: 1;
+    position: relative;
+    max-width: 100px;
+}
+header ul{
+    z-index: 1;
+    position: relative;
+    display:flex;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    display: inline-block;
+    color: #333;
+    margin-left: 40px;
+    font-weight: 400;
+    text-decoration: none;
+}
+.content{
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+.content .textBox h2{
+    margin-top: 80px;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 400;
+}
+.content .textBox h2 span{
+    font-size: 1.2em;
+    font-weight: 800;
+}
+.content .textBox a{
+    display: inline-block;
+    margin-top: 30px;
+    padding:9px 20px;
+    background: red;
+    color:#fff;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.content .imgBox .pepsi{
+    max-width: 400px;
+    padding-top: 100px;
+    padding-right: 40px;
+}
+.size{
+    max-width: 100px;
+}
+.coke{
+    position: absolute;
+    left: 50%;
+    bottom: -200px;
+    transform: translate(-50%);
+    display: flex;
+}
+.coke li{
+    list-style: none;
+    display: inline-block;
+    margin:0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.coke li:hover{
+    transform: translateY(-15px);
+}
+.coke li img{
+    max-width: 70px;
+}
+.social{
+    position: absolute;
+    top:50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social li a{
+    display: inline-block;
+    margin: 10px 0;
+    transform: scale(0.6);
+}
+
